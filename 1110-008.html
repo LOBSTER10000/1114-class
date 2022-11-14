@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심시간</title>
+    <style>
+        * {
+            margin:0;
+            padding : 0;
+            box-sizing: border-box;
+        }
+
+        #galleryZOne {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- 배열객체를 이용하여 메뉴의 5개의 데이터를 변수 menu에 참조시키세요 -->
+    <!-- Math.random()과 배열 데이터 갯수(length)를 이용하여 배열 인덱스값이 랜덤으로 추출이 되도록 하는 것 -->
+
+    <div id="galleryZOne">
+        <p><img src="images/pic_1.jpg" alt="1번 이미지" id="Photo"></p>
+        <p>
+            <button onclick="gallery(0)">이전</button>
+            <button onclick="gallery(1)">다음</button>
+        </p>
+    </div>
+
+    <script>
+        let num = 1;
+
+        function gallery(direct) {
+            if(direct) {
+                if(num == 8 ) return;
+                num++ ;
+            } else {
+                if (num == 1) return;
+                num-- ;
+            }
+
+            let imgTag = document.getElementById("Photo");
+            imgTag.setAttribute("src", "images/pic_" + num + ".jpg");
+        }; // setAttribut(속성명, 속성값)
+
+
+        // let arr = [];
+        // arr[0] = '짜장면';
+        // arr[1] = '돈가스';
+        // arr[2] = '된장국';
+        // arr[3] = '김치찌개';
+        // arr[4] = '회덮밥';
+        
+
+        // for (let i = 0; i< arr.length ; i++){
+        //     document.write(arr[i]);
+        // };
+
+        let menu = ['짜장면', '돈가스', '된장국', '김치찌개', '회덮밥'];
+        let ran = Math.floor(Math.random()*menu.length);
+        let go = menu[ran];
+            
+        document.write(go); 
+
+        // for (menu = 0 ; menu < arr.length; menu++){
+        //     console.log(arr[menu]);
+        // 자바스크립트 소괄호는 함수 대괄호는 데이터 
+
+
+        let pn = "010-4421-2367";
+        let result1 = pn.substring(pn.length-4, 0);
+        document.write(result1, "**** <br>");
+
+    </script>
+</body>
+</html>

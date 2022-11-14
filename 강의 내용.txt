@@ -1,0 +1,11 @@
+문자열 객체 : String 객체
+
+let str = Welcome To Korea!
+
+str.charAt(5) -> m //문자열에 다섯번째에 있는 값을 나타내라
+
+indexOf("찾을 문자")
+
+str.indexOf("o"); // o가 몇번째에 있는지 찾으시오.
+
+indexOf("korea"); 

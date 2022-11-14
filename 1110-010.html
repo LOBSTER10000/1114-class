@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엄지척</title>
+    <style>
+        @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+
+        i {
+            font-size: 100px;
+        }
+
+        i:hover {
+            color : blue;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <i id="thumup" class="fa-solid fa-thumbs-up"></i>
+
+    <script>
+        // let up = document.getElementsByClassName("i");
+        // up.addEventListener('click');
+
+        // input.addEventListener("click", ()=>{
+        //     if(up.addEventListener('clicked')) {
+        //         up.style.transform = "rotate(180deg)";
+        //     } else {
+        //         up.style.transform = "rotate(0)";
+        //     }
+        // });
+
+        let thumsup = document.getElementsByClassName('thumup');
+            thumsup.addEventListener("click", TU,);
+            thumsup.addEventListener("click", TD,);
+
+            function TU(){
+                document.getElementById("thumup").style.rotate = "180deg";
+            };
+
+            function TD(){
+                document.getElementById("thumup").style.rotate = "0";
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹</title>
+    <style>
+        body {
+          margin: 0;
+          background-color: #f1f1f1;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #navbar {
+          background-color: #333;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          display: block;
+          transition: top 0.3s;
+        }
+        
+        #navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 15px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+    </div>
+
+    <div style="padding: 15px 15px 5000px;">
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, minus nam fugiat dolorum quae impedit placeat quidem fugit recusandae nesciunt amet tempora neque quia, sint sunt ullam ipsum, quis velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus hic at deserunt laboriosam iure! Consequuntur accusamus fugiat nam voluptatem, reiciendis fuga velit. Fuga quibusdam facilis vero vitae voluptates quod mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ducimus quam sunt cupiditate eligendi laboriosam velit dicta soluta ipsa ullam neque sed eius provident qui autem accusamus, facere voluptatum enim!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dignissimos? Ex autem veritatis ducimus eligendi eveniet ab nihil enim, mollitia, blanditiis obcaecati odit non impedit? Corrupti excepturi iure esse rerum!
+  
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore totam iure, voluptatum odit facere vitae libero cumque rem distinctio officia tenetur dolor provident eveniet similique. Hic unde quibusdam pariatur distinctio!
+  
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam iste quia ratione neque totam dolorem voluptatem obcaecati, atque accusamus aliquid fugiat, ab quo, earum voluptatum soluta ullam eos a.
+  
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est officiis culpa amet nostrum enim iusto, similique ex illo explicabo sequi atque non, excepturi ipsam ducimus aspernatur minima. Consequuntur, provident recusandae.
+  
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam neque dolorem, quia itaque perferendis illum reprehenderit obcaecati vitae aliquam repellendus quisquam pariatur. Voluptatum, illo a expedita quaerat quisquam cum ea!
+  
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur rem eligendi exercitationem tempore eveniet, odio nesciunt iure magnam corrupti, aspernatur quaerat quos sed quisquam animi voluptate, molestiae saepe fugiat incidunt.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laudantium odit delectus mollitia, placeat aut? Culpa, dicta et. Qui sequi aperiam, nihil magnam eum doloribus nulla similique ea itaque aliquid.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur labore nemo delectus accusamus eos quae iste, excepturi optio nostrum maiores saepe quo amet debitis odio porro iusto consequuntur commodi temporibus.
+  
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, laborum ducimus quia expedita cupiditate quo est quis architecto itaque incidunt error, eligendi assumenda ipsum corrupti consequatur eius dolores sunt. Quaerat.
+  
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam non, ea excepturi dolores voluptatibus molestiae, corrupti quos aspernatur asperiores dolore facilis quod obcaecati totam. Voluptatibus, ullam? Debitis ipsum vitae vel.
+          
+      </p>
+  </div>
+
+  <script>
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function(){
+      let currentScrollPos = window.pageYOffset;
+      
+      if(prevScrollpos > currentScrollPos ) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
+  </script>
+</body>
+</html>
